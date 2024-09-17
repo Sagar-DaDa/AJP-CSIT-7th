@@ -8,7 +8,7 @@ public class ArrayCopyExample {
 
         // Printing the destination array after copying
         for (int num : destination) {
-            System.out.print(num + " ");  // Output: 2 3 4 0 0
+            System.out.println(num + " ");  // Output: 2 3 4 0 0
         }
     }
 }
