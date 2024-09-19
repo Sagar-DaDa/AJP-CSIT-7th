@@ -1,8 +1,9 @@
+package layouts;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class BorderLayoutDemo extends JFrame {
-    JButton b1, b2, b3, b4, b5;
     public BorderLayoutDemo() {
         // Set the title and size of the window
         setTitle("BorderLayout Demo");
@@ -15,11 +16,11 @@ public class BorderLayoutDemo extends JFrame {
         setLayout(new BorderLayout());
 
         // Create buttons
-        b1 = new JButton("Button 1");
-        b2 = new JButton("Button 2");
-        b3 = new JButton("Button 3");
-        b4 = new JButton("Button 4");
-        b5 = new JButton("Button 5");
+        JButton b1 = new JButton("Button 1");
+        JButton b2 = new JButton("Button 2");
+        JButton b3 = new JButton("Button 3");
+        JButton b4 = new JButton("Button 4");
+        JButton b5 = new JButton("Button 5");
 
         // Add buttons to the respective regions
         add(b1, BorderLayout.NORTH);
@@ -33,6 +34,7 @@ public class BorderLayoutDemo extends JFrame {
     }
 
     public static void main(String[] args) {
-        BorderLayoutDemo borderLayoutDemo = new BorderLayoutDemo();
+        // Create and display the frame on the Event Dispatch Thread
+        SwingUtilities.invokeLater(BorderLayoutDemo::new);
     }
 }

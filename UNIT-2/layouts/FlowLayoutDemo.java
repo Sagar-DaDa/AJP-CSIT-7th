@@ -1,3 +1,5 @@
+package layouts;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -20,13 +22,15 @@ public class FlowLayoutDemo extends JFrame {
         add(new JButton("Button 4"));
         add(new JButton("Button 5"));
         add(new JButton("Button 6"));
-        add(new JButton("This is Larger Button"));
 
         // Make the window visible
         setVisible(true);
     }
 
     public static void main(String[] args) {
-        FlowLayoutDemo flowLayoutDemo = new FlowLayoutDemo();
+        // Create and display the frame on the Event Dispatch Thread
+        SwingUtilities.invokeLater(FlowLayoutDemo::new);
     }
 }
+
+

@@ -63,6 +63,7 @@ public class GridBagDemo extends JFrame {
 
     // Main method to create and display the GUI
     public static void main(String[] args) {
+        // Create the frame directly
         new GridBagDemo();
     }
 }

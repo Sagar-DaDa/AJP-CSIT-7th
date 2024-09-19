@@ -1,3 +1,4 @@
+package layouts;
 import javax.swing.*;
 import java.awt.*;
 
@@ -50,6 +51,7 @@ public class GroupLayoutDemo extends JFrame {
     }
 
     public static void main(String[] args) {
+        // Create and display the GUI
         new GroupLayoutDemo();
     }
 }
