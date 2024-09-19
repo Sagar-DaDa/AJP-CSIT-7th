@@ -1,3 +1,4 @@
+package menu;
 import javax.swing.*;
 
 public class SwingMenu {
@@ -14,12 +15,15 @@ public class SwingMenu {
         JMenu fileMenu = new JMenu("File");
 
         // Create JMenuItems using different constructors
-        JMenuItem newItem = new JMenuItem("New");
+        JMenuItem newItem = new JMenuItem("New", new ImageIcon("D:\\Teaching\\BKC\\CSIT 7th\\Advanced Java Programming\\Code\\UNIT-2\\menu\\icons\\new.png"));
         JMenuItem openItem = new JMenuItem("Open");
-        JMenuItem saveItem = new JMenuItem("Save", new ImageIcon("save.png")); // With an icon
+        openItem.setIcon(new ImageIcon("D:\\Teaching\\BKC\\CSIT 7th\\Advanced Java Programming\\Code\\UNIT-2\\menu\\icons\\open.png"));
+        JMenuItem saveItem = new JMenuItem("Save", new ImageIcon("D:\\Teaching\\BKC\\CSIT 7th\\Advanced Java Programming\\Code\\UNIT-2\\menu\\icons\\save.png")); // With an icon
         JMenuItem exitItem = new JMenuItem("Exit", 'E'); // With mnemonic 'E'
+        exitItem.setIcon(new ImageIcon("D:\\Teaching\\BKC\\CSIT 7th\\Advanced Java Programming\\Code\\UNIT-2\\menu\\icons\\exit.png"));
 
         // Add JMenuItems to the JMenu
+        fileMenu.setSize(150,5);
         fileMenu.add(newItem);
         fileMenu.add(openItem);
         fileMenu.add(saveItem);
