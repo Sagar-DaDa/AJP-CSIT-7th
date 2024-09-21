@@ -32,7 +32,7 @@ public class BorderDemo extends JFrame {
         titledBorderPanel.setBorder(BorderFactory.createTitledBorder(BorderFactory.createLineBorder(Color.RED),"Border Title"));
         titledBorderPanel.setBackground(Color.LIGHT_GRAY);
 
-        Icon icon = new ImageIcon("globe.png");
+        Icon icon = new ImageIcon("D:\\Teaching\\BKC\\CSIT 7th\\Advanced Java Programming\\Code\\UNIT-2\\borders\\globe.png");
         JPanel matteBorderPanel = createPanel("Matte Border with Icon");
         matteBorderPanel.setBorder(BorderFactory.createMatteBorder(5, 5, 5, 5, icon));
 
