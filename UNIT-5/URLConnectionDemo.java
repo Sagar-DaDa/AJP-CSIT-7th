@@ -5,6 +5,7 @@ public class URLConnectionDemo {
     public static void main(String[] args) {
         try {
             // Creating a URL object
+            @SuppressWarnings("deprecation")
             URL url = new URL("https://www.google.com");
 
             // Opening a connection to the URL
